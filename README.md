@@ -9,3 +9,5 @@ Gained experience working with:
 - Third party libs: Vector icons and Fonts
 - Reusable Components: Implemented reusable components
 - Styling: Different stylings for Android and iOS using Platform API
+
+![](MealApp.gif)
