@@ -10,4 +10,4 @@ Gained experience working with:
 - Reusable Components: Implemented reusable components
 - Styling: Different stylings for Android and iOS using Platform API
 
-![](MealApp.gif)
+![](MealApp.gif = 375 x 812)
