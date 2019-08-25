@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
+import {FlatList} from 'react-native';
 import {CATEGORIES} from '../data/dummy-data';
 import CategoryGridTile from '../components/CategoryGridTile';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
@@ -44,7 +44,5 @@ CategoriesScreen.navigationOptions = navData => {
     ),
   };
 };
-
-const styles = StyleSheet.create({});
 
 export default CategoriesScreen;

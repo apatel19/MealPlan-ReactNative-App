@@ -4,12 +4,27 @@ import {StyleSheet, View, Text} from 'react-native';
 import {useScreens} from 'react-native-screens';
 import MealsNavigator from './navigations/MealsNavigator';
 
+//Redux related
+import {createStore, combineReducers} from 'redux';
+import mealsReducers from './store/reducers/meals';
+import {Provider} from 'react-redux';
+
 useScreens(); //for performance uses native screens example iOS uses UIViewController
 
 console.disableYellowBox = true;
 
+const rootReducer = combineReducers({
+  meals: mealsReducers,
+});
+
+const store = createStore(rootReducer);
+
 const App = () => {
-  return <MealsNavigator />;
+  return (
+    <Provider store={store}>
+      <MealsNavigator />
+    </Provider>
+  );
 };
 
 const styles = StyleSheet.create({
